@@ -1,1 +1,4 @@
-<p>navigation works!</p>
+<nav>
+    <button mat-button *ngFor="let navigation of internalNavigations" routerLink={{navigation.link}}>{{navigation.title}}</button>
+    <a mat-button *ngFor="let navigation of externalNavigations" href={{navigation.link}}>{{navigation.title}}</a>
+</nav>
